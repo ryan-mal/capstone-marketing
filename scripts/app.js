@@ -9,3 +9,4 @@ window.addEventListener("load", (event) => {
   colors: ["#8e7cc3", "#ffd966", "#969490"],
 });
 });
+

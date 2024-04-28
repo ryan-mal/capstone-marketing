@@ -89,3 +89,49 @@ header img {
     border: none;
     cursor: pointer;
 }
+
+.full-width-gif img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes any default margin/padding */
+}
+
+.main-content.reverse {
+    flex-direction: row-reverse; /* Reverses the order of the flex items */
+}
+
+.text-block {
+    text-align: center; /* Centers the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-block p {
+    text-align: justify;
+    max-width: 90%;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-content, .main-content.reverse {
+        flex-direction: column;
+    }
+
+    .image-container, .text-block {
+        width: 100%;
+    }
+
+    .full-width-gif img {
+        max-height: 500px; /* Adjusts GIF size on smaller screens */
+    }
+}
+
+
