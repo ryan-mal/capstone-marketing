@@ -1,34 +1,91 @@
-body {
+body, html {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
 }
 
-header {
+header img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.main-content {
+    display: flex;
+    margin: 20px;
+	text-align: justify;
+}
+
+.image-container {
+    flex: 1; /* Assigns flex-grow: 1, flex-shrink: 1, and flex-basis: 0% */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally within the container */
+    align-items: center; /* Centers the image vertically within the container */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensures the image does not exceed the width of its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
+
+.text-block {
+    width: 50%; /* Adjust width as needed or keep it flexible with flexbox settings */
+    padding: 20px; /* Add padding for aesthetic spacing */
+    text-align: center; /* Centers the text within the text-block */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: center; /* Vertically centers content in the flex container */
+    align-items: center; /* Horizontally centers content in the flex container */
 }
 
-#logo img {
-    width: 33.333%; /* Logo takes 1/3 of the header width */
-    height: auto; /* Maintain aspect ratio */
+.text-block h1 {
+    font-weight: bold; /* Ensures the heading is bold */
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.text-block h2 {
+    font-weight: normal; /* Ensures subheading is less prominent than the heading */
+    margin-top: 10px; /* Adds space between heading and subheading */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.text-block p {
+    text-align: justify; /* Justifies the paragraph text */
+    text-justify: inter-word; /* Improves spacing between words */
+    max-width: 90%; /* Restricts paragraph width for better readability */
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: black;
+
+.subscribe-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 20px;
+    color: white;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.subscribe-bar input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.subscribe-bar button {
+    padding: 10px 20px;
+    background-color: #f90;
+    color: white;
+    border: none;
+    cursor: pointer;
 }

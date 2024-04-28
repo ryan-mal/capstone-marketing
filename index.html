@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendulum-Games</title>
-    <link rel="stylesheet" href="styles.css">
+	<!-- Page Title -->
+	<title>Pendulum-Games</title>
+
+	<!-- Responsive design meta tag -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="scripts/styles.css">
+
+	<!-- JavaScript Libraries -->
+	<script src="scripts/app.js"></script>
 </head>
+
 <body>
     <header>
-        <div id="logo">
-            <img src="site_test/images/logo.png" alt="Pendulum-Games Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bound-by-a-dying-star.html">Bound by a Dying Star</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <img src="scripts/images/PendulumGamesTextLogo.png" alt="Pendulum Games Logo">
     </header>
-    <main>
-        <h1>Welcome to Pendulum-Games!</h1>
-        <p>This is the home page content.</p>
-    </main>
-    <script src="script.js"></script>
+	<!-- Nav -->
+    <nav class="topbar">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Bound by a Dying Star</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+	
+    <section class="main-content">
+        <div class="image-container">
+            <img src="scripts/images/CircularLogo_BigFile.png" alt="Logo">
+        </div>
+		
+		<div class="text-block">
+			<h1>Welcome to Pendulum Games!</h1>
+			<h2>Where dreams come to life in the games we develop!</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non fermentum erat. Vivamus consequat, nulla a vulputate volutpat, nisi erat iaculis nibh, vel placerat diam elit a dui. Fusce cursus enim ac nunc elementum, in ultrices purus sollicitudin. Morbi vitae magna in magna fermentum auctor. Aliquam erat volutpat. Donec sed orci quam. Mauris molestie, nibh non auctor suscipit, libero arcu sagittis dolor, in mollis lorem dolor non nisi.</p>
+		</div>
+		
+    </section>
+    <div class="subscribe-bar">
+        <input type="email" placeholder="Your email address">
+        <button onclick="subscribe()">Subscribe</button>
+    </div>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
