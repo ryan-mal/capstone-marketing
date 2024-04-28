@@ -134,4 +134,40 @@ header img {
     }
 }
 
+footer {
+    background-color: #282828;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left img {
+    margin-left: 20px;
+}
+
+.footer-right a {
+    margin: 0 10px;
+}
+
+.footer-right img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-right img:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
 
